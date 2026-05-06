@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>04 · Technologiewissen | KI-Magie</title>
+  <meta name="description" content="Wie funktioniert KI? Maschinelles Lernen, Chatbots, neuronale Netze und Deep Learning - verständlich erklärt mit niveaudifferenzierten Übungen." />
+  <meta name="theme-color" content="#283676" />
+  <meta name="author" content="Michael Fleischer" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="04 · Technologiewissen | KI-Magie" />
+  <meta property="og:description" content="Wie funktioniert KI? Maschinelles Lernen, Chatbots, neuronale Netze und Deep Learning - verständlich erklärt mit niveaudifferenzierten Übungen." />
+  <meta property="og:image" content="../assets/og-image.svg" />
+  <meta property="og:locale" content="de_DE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="04 · Technologiewissen | KI-Magie" />
+  <meta name="twitter:description" content="Wie funktioniert KI? Maschinelles Lernen, Chatbots, neuronale Netze und Deep Learning - verständlich erklärt mit niveaudifferenzierten Übungen." />
+  <meta name="twitter:image" content="../assets/og-image.svg" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html">
+      <div class="brand-logo"><span>KI</span></div>
+      <div class="brand-name">KI-Magie<small>Vom Prompt zur Praxis</small></div>
+    </a>
+    <button class="nav-toggle" aria-label="Menü"><span></span></button>
+    <nav class="main-nav">
+      <a href="../index.html">Start</a>
+      <a href="01-ki-im-alltag.html">Alltag</a>
+      <a href="02-ai-literacy-lehrende.html">Lehrende</a>
+      <a href="03-ai-literacy-lernende.html">Lernende</a>
+      <a href="04-technologiewissen.html">Technik</a>
+      <a href="08-ethik-zukunft.html">Ethik</a>
+      <a href="09-didaktischer-einsatz.html">Didaktik</a>
+      <a href="11-datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</header>
+
+<header class="page-header">
+  <div class="container">
+    <div class="breadcrumbs"><a href="../index.html">Start</a><span>/</span>Workshop 04</div>
+    <span class="page-num">Workshop 04</span>
+    <h1>Technologiewissen: So funktioniert KI</h1>
+    <p class="lead">Vier Bausteine, um KI ohne Mathekenntnisse zu verstehen: Funktionsweise, Maschinelles Lernen, Chatbots und Neuronale Netze. Mit Visualisierungen und Übungen für alle Stufen.</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-content">
+
+    <aside class="toc">
+      <h4>In diesem Workshop</h4>
+      <ol>
+        <li><a href="#funktionsweise">a) Funktionsweise von KI</a></li>
+        <li><a href="#machine-learning">b) Maschinelles Lernen</a></li>
+        <li><a href="#chatbot">c) Wie funktioniert ein Chatbot?</a></li>
+        <li><a href="#deep-learning">d) Neuronale Netze &amp; Deep Learning</a></li>
+        <li><a href="#tools">Visualisierungen</a></li>
+        <li><a href="#lernideen">Lernideen mit KI</a></li>
+        <li><a href="#ressourcen">Ressourcen</a></li>
+      </ol>
+    </aside>
+
+    <article class="content">
+
+      <section id="funktionsweise">
+        <h2>a) Wie funktioniert KI - das große Bild</h2>
+        <p>KI-Systeme sind keine „denkenden Maschinen". Sie sind Systeme, die <strong>Muster in sehr vielen Daten finden</strong> und auf neue Situationen anwenden. Drei Komponenten greifen ineinander:</p>
+        <ol>
+          <li><strong>Daten</strong> - Texte, Bilder, Töne, Tabellen.</li>
+          <li><strong>Modell</strong> - die mathematische Struktur, die Muster aus den Daten lernt.</li>
+          <li><strong>Inferenz</strong> - das Anwenden des Modells auf neue Eingaben.</li>
+        </ol>
+        <div class="callout">
+          Eine KI weiß nichts. Sie hat <em>statistisch gelernt</em>, was wahrscheinlich kommt - und gibt das wahrscheinlichste Folge-Token, Pixel oder Etikett aus.
+        </div>
+      </section>
+
+      <section id="machine-learning">
+        <h2>b) Wie funktioniert Maschinelles Lernen?</h2>
+        <p>Klassische Programme arbeiten mit fest formulierten Regeln. Maschinelles Lernen lernt diese Regeln <strong>aus Beispielen</strong>:</p>
+        <h3>Drei Lerntypen</h3>
+        <ul>
+          <li><strong>Überwachtes Lernen</strong> - Daten mit Etiketten (z.B. „das ist eine Katze"). Klassiker für Bilderkennung.</li>
+          <li><strong>Unüberwachtes Lernen</strong> - Daten ohne Etiketten, Muster werden selbst entdeckt (Cluster, Anomalien).</li>
+          <li><strong>Bestärkendes Lernen (Reinforcement Learning)</strong> - System lernt durch Belohnung/Strafe (z.B. AlphaGo).</li>
+        </ul>
+        <h3>Trainings-Loop in einer Zeile</h3>
+        <div class="callout tip">
+          Daten → Vorhersage → Vergleich mit erwarteter Antwort → Fehler messen → Modell anpassen → wiederholen.
+        </div>
+      </section>
+
+      <section id="chatbot">
+        <h2>c) Wie funktioniert ein Chatbot?</h2>
+        <p>Ein Sprachmodell-basierter Chatbot (LLM) macht im Kern nur eines: <strong>Token vorhersagen</strong>. Ein Token ist eine Texteinheit (oft ein Wortteil).</p>
+        <ol>
+          <li>Eingabe wird in Tokens zerlegt.</li>
+          <li>Modell berechnet Wahrscheinlichkeiten für das nächste Token.</li>
+          <li>Token mit hoher Wahrscheinlichkeit wird gewählt (mit etwas Zufallsanteil = Temperatur).</li>
+          <li>Der Vorgang wird tausendfach wiederholt - so entsteht der Antworttext.</li>
+        </ol>
+        <div class="callout warn">
+          <strong>Wichtig:</strong> Ein Chatbot „weiß" nichts und „erinnert sich" nicht von selbst. Was wie Erinnerung wirkt, ist meistens nur das, was im aktuellen Kontextfenster steht.
+        </div>
+      </section>
+
+      <section id="deep-learning">
+        <h2>d) Neuronale Netze &amp; Deep Learning</h2>
+        <p>Neuronale Netze bestehen aus <em>Schichten</em> (Layers) von einfachen Recheneinheiten („Neuronen"). Jede Schicht transformiert die Eingabe ein Stück weiter. Bei Deep Learning sind viele Schichten gestapelt - daher „tief".</p>
+        <ul>
+          <li><strong>Eingabe-Schicht:</strong> z.B. Pixel eines Bildes</li>
+          <li><strong>Versteckte Schichten:</strong> erkennen Kanten, Texturen, Objektteile, ganze Objekte</li>
+          <li><strong>Ausgabe-Schicht:</strong> z.B. Wahrscheinlichkeit „Katze 92%, Hund 4%, …"</li>
+        </ul>
+        <p>Bei Sprachmodellen hat sich seit 2017 die <strong>Transformer-Architektur</strong> durchgesetzt - mit dem Mechanismus „Self-Attention", der Beziehungen zwischen weit entfernten Wörtern modelliert.</p>
+      </section>
+
+      <section id="tools">
+        <h2>Visualisierungen für den Unterricht</h2>
+        <div class="embed-card">
+          <div class="embed-card-head">
+            <div>
+              <h4>KI-Blick - Bilderkennung sichtbar machen</h4>
+              <span style="color:var(--color-text-muted);font-size:0.9rem;">Zeigt, was eine KI „sieht" und mit welcher Sicherheit.</span>
+            </div>
+            <a class="btn btn-outline" href="https://www.ki-blick.kmz-es.de/#/" target="_blank" rel="noopener">In neuem Tab öffnen ↗</a>
+          </div>
+          <div class="embed-frame">
+            <iframe src="https://www.ki-blick.kmz-es.de/#/" loading="lazy" allow="camera; microphone" title="KI-Blick"></iframe>
+          </div>
+        </div>
+      </section>
+
+      <section id="lernideen">
+        <h2>Lernideen mit KI</h2>
+
+        <div class="lernideen">
+          <div class="lernideen-header">
+            <h3>💡 Workshop 04 - Lernideen</h3>
+            <p>KI-Funktionsweise altersgerecht erfahrbar machen.</p>
+          </div>
+          <div class="tabs">
+            <button class="tab-btn active" data-target="w4-gs">Lehrende GS<span class="role-tag">Grundschule</span></button>
+            <button class="tab-btn" data-target="w4-s1">Lehrende Sek&nbsp;I<span class="role-tag">Klasse 5-10</span></button>
+            <button class="tab-btn" data-target="w4-s2">Lehrende Sek&nbsp;II<span class="role-tag">Oberstufe</span></button>
+            <button class="tab-btn" data-target="w4-l1">Lernende Sek&nbsp;I<span class="role-tag">Klasse 5-10</span></button>
+            <button class="tab-btn" data-target="w4-l2">Lernende Sek&nbsp;II<span class="role-tag">Oberstufe</span></button>
+          </div>
+          <div class="tab-panels">
+
+            <div class="tab-panel active" data-panel="w4-gs">
+              <div class="idea">
+                <h4>👁 KI-Blick-Safari im Klassenzimmer</h4>
+                <div class="idea-meta">
+                  <span class="badge level-1">Niveau 1</span>
+                  <span class="badge time">⏱ 45 Min</span>
+                  <span class="badge tool">🛠 KI-Blick</span>
+                </div>
+                <ol class="idea-steps">
+                  <li>Klasse fotografiert mit KI-Blick 5 Gegenstände.</li>
+                  <li>Erkennt KI-Blick alle? Wo liegt sie daneben?</li>
+                  <li>Hypothesen sammeln: warum erkennt die KI einen Apfel, aber kein Mäppchen?</li>
+                </ol>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Du bist Grundschullehrkraft. Erkläre mir in einer 5-Minuten-Sequenz für Klasse 4, warum eine KI manche Gegenstände erkennt und andere nicht. Verwende dafür das Bild von einem Memory-Spiel als Vergleich. Liefere am Ende drei Fragen, die die Kinder selbstständig im Heft beantworten können.</span>
+                </div>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Was hat KI von Menschen gelernt? Was nicht?</div>
+              </div>
+
+              <div class="idea">
+                <h4>🐶 Hund-oder-Katze-Spiel (analog)</h4>
+                <div class="idea-meta">
+                  <span class="badge level-1">Niveau 1</span>
+                  <span class="badge time">⏱ 30 Min</span>
+                  <span class="badge tool">🛠 Karten / Bewegungsspiel</span>
+                </div>
+                <p>Klasse spielt Maschinelles Lernen analog: Bilder von Hund und Katze, Schüler:innen sortieren sie nach Merkmalen. Anschließend bekommt eine „neue" Karte einen Vorschlag.</p>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Welche Regeln habt ihr selbst „gelernt"?</div>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="w4-s1">
+              <div class="idea">
+                <h4>🧪 Token-Spiel - „Schreib weiter, KI"</h4>
+                <div class="idea-meta">
+                  <span class="badge level-2">Niveau 2</span>
+                  <span class="badge time">⏱ 60 Min</span>
+                  <span class="badge tool">🛠 ChatGPT</span>
+                </div>
+                <p>Klasse erlebt Token-Vorhersage am eigenen Leib: ein:e Schüler:in schreibt drei Wörter, die nächsten ergänzen je ein Wort - ähnlich einem Sprachmodell.</p>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Du bist Mathe- oder Informatiklehrer:in (Sek I). Erkläre mir in einem 8-minütigen Tafelimpuls für Klasse 9, wie ein Sprachmodell „Token für Token" Texte erzeugt. Nutze ein Beispielsatz, den du Schritt für Schritt zerlegst und mit Wahrscheinlichkeiten beschriftest. Liefere zum Schluss eine Tafelbild-Skizze in ASCII.</span>
+                </div>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Wer „entscheidet" eigentlich, was als Nächstes kommt?</div>
+              </div>
+
+              <div class="idea">
+                <h4>🐾 Klassifikations-Experiment</h4>
+                <div class="idea-meta">
+                  <span class="badge level-2">Niveau 2</span>
+                  <span class="badge time">⏱ 60 Min</span>
+                  <span class="badge tool">🛠 Teachable Machine + KI-Blick</span>
+                </div>
+                <p>Schüler:innen trainieren mit Teachable Machine (oder KI-Blick) eine eigene Mini-KI. Sie protokollieren, wie viele Beispiele sie brauchen, bis das System „brauchbar" wird.</p>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Du bist mein:e Tutor:in für Maschinelles Lernen (Klasse 9). Ich habe gerade mit Teachable Machine eine Mini-KI trainiert, die zwei Dinge unterscheiden soll. Stelle mir 6 Reflexionsfragen, mit denen ich überprüfen kann, ob mein Modell wirklich gelernt hat - oder nur auswendig kennt. Sortiere die Fragen nach „Daten", „Modell", „Bias", „Test".</span>
+                </div>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Wie wenig Daten reichen schon für eine Verzerrung?</div>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="w4-s2">
+              <div class="idea">
+                <h4>🧬 Transformer für die Schule erklärt</h4>
+                <div class="idea-meta">
+                  <span class="badge level-3">Niveau 3</span>
+                  <span class="badge time">⏱ 90 Min</span>
+                  <span class="badge tool">🛠 ChatGPT</span>
+                </div>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Verhalte dich wie ein:e Hochschullehrer:in für Informatik. Erstelle für eine Sek-II-Doppelstunde ein didaktisches Konzept zum Thema Transformer-Architektur. Es muss ohne Hochschulmathematik auskommen.
+- 1) 5-Phasen-Plan (Aktivieren, Erarbeiten, Sichern, Anwenden, Reflektieren).
+- 2) je eine Tafel-/Whiteboard-Skizze pro Phase (in ASCII oder Beschreibung).
+- 3) eine differenzierte Aufgabe pro Phase.
+- 4) Liste mit 3 Missverständnissen, die typischerweise auftreten und wie sie zu klären sind.</span>
+                </div>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Wo bleibt deine Erklärung sauber - wo ist sie metaphorisch?</div>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="w4-l1">
+              <div class="idea">
+                <h4>🎲 Maschine lernt - mein eigenes Sortier-Spiel</h4>
+                <div class="idea-meta">
+                  <span class="badge level-2">Lernidee</span>
+                  <span class="badge time">⏱ 45 Min</span>
+                  <span class="badge tool">🛠 Teachable Machine</span>
+                </div>
+                <p>Trainiere eine Mini-KI, die zwei Dinge unterscheidet (z.B. Stift und Schere). Notiere im Heft, wie du das Modell „austricksen" kannst.</p>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Hi! Ich bin Schüler:in (Klasse 8) und habe gerade mit Teachable Machine eine Mini-KI trainiert. Sie soll Stift und Schere unterscheiden. Hilf mir mit drei einfachen Tests, mit denen ich herausfinde, ob meine KI ehrlich gelernt hat oder nur ein Foto auswendig kennt. Schreib altersgerecht.</span>
+                </div>
+                <div class="idea-reflect"><strong>Selbst-Check:</strong> Welcher Test war am hilfreichsten?</div>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="w4-l2">
+              <div class="idea">
+                <h4>🧠 LLM aus deiner Sicht erklärt</h4>
+                <div class="idea-meta">
+                  <span class="badge level-3">Lernidee</span>
+                  <span class="badge time">⏱ 60 Min</span>
+                  <span class="badge tool">🛠 ChatGPT</span>
+                </div>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Verhalte dich wie ein:e Co-Autor:in. Hilf mir, einen 1-seitigen Erklärtext für Mitschüler:innen (Klasse 11) zu schreiben: „Wie funktioniert ein LLM in 5 Sätzen". Bedingungen:
+- Nutze ein Alltagsbeispiel.
+- Vermeide den Begriff „neuronales Netz" als Worthülse - erkläre ihn knapp.
+- Mach am Ende einen Satz darauf aufmerksam, was ein LLM NICHT kann.
+Du darfst meinen Text NICHT umschreiben - nur Strukturvorschläge geben.</span>
+                </div>
+                <div class="idea-reflect"><strong>Selbst-Check:</strong> Würden deine Mitschüler:innen das verstehen?</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="ressourcen">
+        <h2>Ressourcen</h2>
+        <ul class="resource-list">
+          <li><span class="res-type">🎬</span><div><a href="https://kinder.wdr.de/tv/die-sendung-mit-der-maus/av/wie-schreibt-eine-ki-texte-100.html" target="_blank" rel="noopener">Sendung mit der Maus: Wie schreibt eine KI Texte?</a><span class="res-meta">Niedrigschwellige Erklärung</span></div></li>
+          <li><span class="res-type">🎬</span><div><a href="https://www.youtube.com/watch?v=cxCzhFVyUdw" target="_blank" rel="noopener">YouTube: KI-Erklärung</a><span class="res-meta">Video für Sek I/II</span></div></li>
+          <li><span class="res-type">🎬</span><div><a href="https://youtu.be/mxP3G2Jb2LM?si=XexE80AorwEoV6mZ" target="_blank" rel="noopener">YouTube: KI-Funktionsweise</a><span class="res-meta">Video für Sek II</span></div></li>
+          <li><span class="res-type">🧰</span><div><a href="https://www.ki-blick.kmz-es.de/#/" target="_blank" rel="noopener">KI-Blick</a><span class="res-meta">Bilderkennung interaktiv</span></div></li>
+        </ul>
+      </section>
+
+    </article>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <h4>KI-Magie</h4>
+      <p style="color:rgba(255,255,255,0.85);font-size:0.9rem;">Fortbildungsreihe Künstliche Intelligenz für Schule und Unterricht.</p>
+    </div>
+    <div>
+      <h4>Workshops</h4>
+      <ul>
+        <li><a href="01-ki-im-alltag.html">01 · KI im Alltag</a></li>
+        <li><a href="04-technologiewissen.html">04 · Technologiewissen</a></li>
+        <li><a href="05-praktische-anwendung.html">05 · Praktische Anwendung</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Externe Ressourcen</h4>
+      <ul>
+        <li><a href="https://www.ki-blick.kmz-es.de/#/" target="_blank" rel="noopener">KI-Blick</a></li>
+        <li><a href="https://kinder.wdr.de/tv/die-sendung-mit-der-maus/av/wie-schreibt-eine-ki-texte-100.html" target="_blank" rel="noopener">Sendung mit der Maus</a></li>
+      </ul>
+    </div>
+    <div class="copy" style="grid-column:1/-1;">
+      © <span data-year>2026</span> KI-Magie · Michael Fleischer · CC BY-SA 4.0
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>

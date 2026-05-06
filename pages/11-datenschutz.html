@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>11 · Datenschutz und KI | KI-Magie</title>
+  <meta name="description" content="DSGVO, EU-KI-Verordnung, sichere Tools und schulische Praxis - Workshop mit Übungen für GS, Sek I und Sek II." />
+  <meta name="theme-color" content="#283676" />
+  <meta name="author" content="Michael Fleischer" />
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../assets/favicon.svg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="11 · Datenschutz und KI | KI-Magie" />
+  <meta property="og:description" content="DSGVO, EU-KI-Verordnung, sichere Tools und schulische Praxis - Workshop mit Übungen für GS, Sek I und Sek II." />
+  <meta property="og:image" content="../assets/og-image.svg" />
+  <meta property="og:locale" content="de_DE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="11 · Datenschutz und KI | KI-Magie" />
+  <meta name="twitter:description" content="DSGVO, EU-KI-Verordnung, sichere Tools und schulische Praxis - Workshop mit Übungen für GS, Sek I und Sek II." />
+  <meta name="twitter:image" content="../assets/og-image.svg" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a class="brand" href="../index.html">
+      <div class="brand-logo"><span>KI</span></div>
+      <div class="brand-name">KI-Magie<small>Vom Prompt zur Praxis</small></div>
+    </a>
+    <button class="nav-toggle" aria-label="Menü"><span></span></button>
+    <nav class="main-nav">
+      <a href="../index.html">Start</a>
+      <a href="01-ki-im-alltag.html">Alltag</a>
+      <a href="02-ai-literacy-lehrende.html">Lehrende</a>
+      <a href="03-ai-literacy-lernende.html">Lernende</a>
+      <a href="04-technologiewissen.html">Technik</a>
+      <a href="08-ethik-zukunft.html">Ethik</a>
+      <a href="09-didaktischer-einsatz.html">Didaktik</a>
+      <a href="11-datenschutz.html">Datenschutz</a>
+    </nav>
+  </div>
+</header>
+
+<header class="page-header">
+  <div class="container">
+    <div class="breadcrumbs"><a href="../index.html">Start</a><span>/</span>Workshop 11</div>
+    <span class="page-num">Workshop 11</span>
+    <h1>Datenschutz und KI</h1>
+    <p class="lead">Was sagt die DSGVO? Was bringt die EU-KI-Verordnung? Welche Tools sind schultauglich - und wo liegen die Stolperfallen im Alltag?</p>
+  </div>
+</header>
+
+<div class="container">
+  <div class="page-content">
+
+    <aside class="toc">
+      <h4>In diesem Workshop</h4>
+      <ol>
+        <li><a href="#dsgvo">DSGVO &amp; KI</a></li>
+        <li><a href="#ki-vo">EU-KI-Verordnung</a></li>
+        <li><a href="#tools">Schultaugliche Tools</a></li>
+        <li><a href="#stolperfallen">Typische Stolperfallen</a></li>
+        <li><a href="#checkliste">Checkliste für Lehrkräfte</a></li>
+        <li><a href="#lernideen">Lernideen mit KI</a></li>
+        <li><a href="#ressourcen">Ressourcen</a></li>
+      </ol>
+    </aside>
+
+    <article class="content">
+
+      <section id="dsgvo">
+        <h2>DSGVO &amp; KI</h2>
+        <p>Sobald personenbezogene Daten in eine KI eingegeben werden, gilt die DSGVO. Die wichtigsten Prinzipien:</p>
+        <ul>
+          <li><strong>Rechtmäßigkeit:</strong> Es muss eine Rechtsgrundlage geben (Einwilligung, Vertrag, berechtigtes Interesse, gesetzliche Pflicht).</li>
+          <li><strong>Zweckbindung:</strong> Daten dürfen nur für klar definierte Zwecke genutzt werden.</li>
+          <li><strong>Datenminimierung:</strong> So wenig wie möglich, so viel wie nötig.</li>
+          <li><strong>Transparenz:</strong> Betroffene wissen, was passiert.</li>
+          <li><strong>Sicherheit:</strong> Technische und organisatorische Maßnahmen.</li>
+          <li><strong>Speicherbegrenzung:</strong> Daten werden gelöscht, wenn sie nicht mehr nötig sind.</li>
+        </ul>
+        <div class="callout warn">
+          <strong>Konkret für die Schule:</strong> Schüler:innen-Namen, Klassenarbeiten, persönliche Texte gehören NICHT in eine US-amerikanische Cloud-KI ohne Auftragsverarbeitungsvertrag (AVV) und Datenschutzfolgenabschätzung.
+        </div>
+      </section>
+
+      <section id="ki-vo">
+        <h2>EU-KI-Verordnung (AI Act)</h2>
+        <p>Seit 2024/2025 gilt die EU-KI-Verordnung. Sie unterscheidet vier Risikoklassen:</p>
+        <div class="two-col">
+          <div class="note-card">
+            <h4>1. Verbotene KI</h4>
+            <p>Social Scoring, manipulatives Verhalten, biometrische Echtzeit-Erkennung im öffentlichen Raum (mit engen Ausnahmen).</p>
+          </div>
+          <div class="note-card">
+            <h4>2. Hochrisiko-KI</h4>
+            <p>Z.B. KI in Bildung &amp; Prüfung, in HR-Prozessen, Strafverfolgung, kritischer Infrastruktur. Strenge Auflagen.</p>
+          </div>
+          <div class="note-card">
+            <h4>3. Begrenztes Risiko</h4>
+            <p>Chatbots, Deepfakes - Transparenzpflichten („Du sprichst mit einer KI").</p>
+          </div>
+          <div class="note-card">
+            <h4>4. Minimales Risiko</h4>
+            <p>Spam-Filter, Spielanwendungen - kaum Auflagen.</p>
+          </div>
+        </div>
+        <div class="callout">
+          <strong>Schule = Hochrisiko:</strong> KI-Systeme zur Bewertung, Zulassung oder Diagnose fallen in die zweite Stufe. Für Lehrkräfte heißt das: besondere Sorgfalt, klare Dokumentation, menschliche Letztentscheidung.
+        </div>
+      </section>
+
+      <section id="tools">
+        <h2>Schultaugliche Tools - was geht?</h2>
+        <p>Die Lage ist nicht statisch. Faustregeln zum Stand der Diskussion:</p>
+        <ul>
+          <li><strong>fobizz / Schul-KI / Telli (BW)</strong> - DSGVO-konforme Wrapper mit AVV. Geeignet für den Klassenraum.</li>
+          <li><strong>ChatGPT Edu / Microsoft Copilot Education</strong> - mit Bildungslizenz und passendem AVV nutzbar; einzelne Bundesländer haben eigene Empfehlungen.</li>
+          <li><strong>ChatGPT (Privatkonto), Gemini, Claude</strong> - <em>nicht</em> mit Schüler:innen-Daten betreiben. Auf Lehrkraftseite mit Vorsicht und ohne personenbezogene Inhalte.</li>
+          <li><strong>Open-Source-Modelle (lokal)</strong> - prinzipiell sehr datenschutzfreundlich, technische Einstiegshürde.</li>
+        </ul>
+        <div class="callout tip">
+          Beobachte die Hinweise des LMZ Baden-Württemberg, der Datenschutzbehörde und deiner Schulleitung - die Lage entwickelt sich.
+        </div>
+      </section>
+
+      <section id="stolperfallen">
+        <h2>Typische Stolperfallen</h2>
+        <ul>
+          <li>Klassenarbeiten zur Korrektur in eine US-Cloud-KI hochladen.</li>
+          <li>Klarnamen von Schüler:innen in Prompts.</li>
+          <li>Fotos von Schüler:innen in Bildgeneratoren („Mach mein Klassenfoto cooler").</li>
+          <li>Eltern-Mails mit personenbezogenen Inhalten ungeprüft vom KI-Tool versenden.</li>
+          <li>Beratungsgespräche mit der KI „durchsprechen".</li>
+          <li>Schüler:innen einloggen lassen mit Lehrkraft-Account.</li>
+        </ul>
+      </section>
+
+      <section id="checkliste">
+        <h2>Mini-Checkliste vor dem Prompten</h2>
+        <ol>
+          <li>Sind in meinem Prompt personenbezogene Daten? Wenn ja: anonymisieren.</li>
+          <li>Habe ich eine Rechtsgrundlage / einen AVV?</li>
+          <li>Ist der Anbieter datenschutzkonform freigegeben?</li>
+          <li>Wird mein Input zum Training verwendet? (Kann ich das deaktivieren?)</li>
+          <li>Wo speichert das Tool die Daten - und wie lange?</li>
+          <li>Habe ich die Klasse / Eltern transparent informiert?</li>
+        </ol>
+      </section>
+
+      <section id="lernideen">
+        <h2>Lernideen mit KI</h2>
+
+        <div class="lernideen">
+          <div class="lernideen-header">
+            <h3>💡 Workshop 11 - Lernideen</h3>
+            <p>Datenschutz konkret üben - mit Anonymisierungstraining und Tool-Bewertung.</p>
+          </div>
+          <div class="tabs">
+            <button class="tab-btn active" data-target="w11-gs">Lehrende GS<span class="role-tag">Grundschule</span></button>
+            <button class="tab-btn" data-target="w11-s1">Lehrende Sek&nbsp;I<span class="role-tag">Klasse 5-10</span></button>
+            <button class="tab-btn" data-target="w11-s2">Lehrende Sek&nbsp;II<span class="role-tag">Oberstufe</span></button>
+            <button class="tab-btn" data-target="w11-l1">Lernende Sek&nbsp;I<span class="role-tag">Klasse 5-10</span></button>
+            <button class="tab-btn" data-target="w11-l2">Lernende Sek&nbsp;II<span class="role-tag">Oberstufe</span></button>
+          </div>
+          <div class="tab-panels">
+
+            <div class="tab-panel active" data-panel="w11-gs">
+              <div class="idea">
+                <h4>🔒 Datenschutz-Schatzkarte</h4>
+                <div class="idea-meta">
+                  <span class="badge level-1">Niveau 1</span>
+                  <span class="badge time">⏱ 45 Min</span>
+                  <span class="badge tool">🛠 Plakat + Stifte</span>
+                </div>
+                <p>Klasse erstellt eine „Schatzkarte" persönlicher Daten: Was ist wertvoll, was darf raus, was nicht?</p>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Du bist Grundschullehrkraft (Klasse 4). Hilf mir, eine 45-Minuten-Sequenz „Was sind meine Daten - und wem gehören sie?" zu gestalten:
+- Phase 1 (10 Min): Geschichte über Lina, die ihre Adresse teilt
+- Phase 2 (15 Min): Schatzkarte zeichnen mit Daten-Inseln
+- Phase 3 (10 Min): „Tresor"-Übung (was darf rein, was nicht)
+- Phase 4 (10 Min): Klasse formuliert 3 Daten-Regeln in Kindersprache.
+Liefere für jede Phase Material und Methode.</span>
+                </div>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Welche Daten haben die Kinder selbst entdeckt?</div>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="w11-s1">
+              <div class="idea">
+                <h4>🔁 Anonymisierungs-Werkstatt</h4>
+                <div class="idea-meta">
+                  <span class="badge level-2">Niveau 2</span>
+                  <span class="badge time">⏱ 60 Min</span>
+                  <span class="badge tool">🛠 ChatGPT</span>
+                </div>
+                <p>Schüler:innen üben, einen personenbezogenen Text so umzuschreiben, dass er für eine KI brauchbar bleibt - aber nichts preisgibt.</p>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Verhalte dich wie ein:e Datenschutzcoach (Sek I, Klasse 9). Ich gebe dir gleich einen Beispieltext (fiktiv). Aufgaben:
+1) Markiere alle personenbezogenen Daten im Text.
+2) Schreibe drei anonymisierte Versionen (leicht / mittel / streng).
+3) Erkläre, welche Information jeweils verloren geht.
+4) Liefere eine Mini-Faustregel zur Anonymisierung.
+
+Text:
+[FIKTIVER TEXT]</span>
+                </div>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Welche Stufe ist „gut genug"?</div>
+              </div>
+
+              <div class="idea">
+                <h4>🛡 Tool-Vergleich nach Datenschutz</h4>
+                <div class="idea-meta">
+                  <span class="badge level-2">Niveau 2</span>
+                  <span class="badge time">⏱ 90 Min</span>
+                  <span class="badge tool">🛠 ChatGPT + Recherche</span>
+                </div>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Verhalte dich wie ein:e Datenschutzbeauftragte:r für Schulen. Ich nenne dir zwei KI-Tools. Vergleiche sie nach:
+1) Anbietersitz und Rechtsraum
+2) Daten-Speicherort
+3) Trainingsnutzung der Eingaben
+4) Möglichkeit eines AVV
+5) Eignung für Schul-Einsatz mit Schüler:innen-Daten.
+Markiere unsicheres Wissen klar als „bitte prüfen". Schreibe knapp, in Tabellenform.
+
+Tool A: [NAME]
+Tool B: [NAME]</span>
+                </div>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Welche Aussage musst du selbst nachprüfen?</div>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="w11-s2">
+              <div class="idea">
+                <h4>📝 Datenschutzfolgenabschätzung (Light) für ein Schulszenario</h4>
+                <div class="idea-meta">
+                  <span class="badge level-3">Niveau 3</span>
+                  <span class="badge time">⏱ 90 Min</span>
+                  <span class="badge tool">🛠 ChatGPT</span>
+                </div>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Verhalte dich wie ein:e Datenschutz-Tutor:in. Hilf mir, eine vereinfachte Datenschutzfolgenabschätzung für ein konkretes Schul-Szenario zu erstellen:
+1) Beschreibung des Verfahrens
+2) Rechtsgrundlage
+3) Betroffene und Datenkategorien
+4) Risiken (Eintritt &amp; Schwere)
+5) Schutzmaßnahmen (technisch + organisatorisch)
+6) Restrisiko und Empfehlung.
+Markiere klar, was fundiert ist und was ich rechtlich prüfen muss.
+
+Szenario: [SZENARIO]</span>
+                </div>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Wo bleibt das Restrisiko - und wie machst du es transparent?</div>
+              </div>
+
+              <div class="idea">
+                <h4>⚖️ EU-KI-VO im Klassenformat</h4>
+                <div class="idea-meta">
+                  <span class="badge level-3">Niveau 3</span>
+                  <span class="badge time">⏱ 90 Min</span>
+                  <span class="badge tool">🛠 ChatGPT</span>
+                </div>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Verhalte dich wie ein:e Politikdidaktiker:in (Sek II, Gemeinschaftskunde). Erstelle eine 90-Min-Doppelstunde zur EU-KI-Verordnung:
+1) Aktivierungsphase mit aktuellen Beispielen
+2) Erarbeitungsphase: 4 Risikoklassen mit Fallbeispielen aus dem Schulalltag
+3) Diskussionsphase: Pro/Contra Hochrisiko-Einstufung von Schule
+4) Sicherungsphase: Mini-Klassenkommentar (5 Sätze)
+5) Hausaufgabe: eigene Stellungnahme.
+Liefere differenzierte Materialien für 2 Niveaustufen.</span>
+                </div>
+                <div class="idea-reflect"><strong>Reflexion:</strong> Welche Kontroverse bringt deine Klasse zum Mitdenken?</div>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="w11-l1">
+              <div class="idea">
+                <h4>🚫 Was darf NICHT in den Prompt?</h4>
+                <div class="idea-meta">
+                  <span class="badge level-2">Lernidee</span>
+                  <span class="badge time">⏱ 30 Min</span>
+                  <span class="badge tool">🛠 Stift &amp; Papier + ChatGPT</span>
+                </div>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Hi! Ich bin Schüler:in (Klasse 8). Hilf mir mit einer einfachen Liste in 5 Punkten: Was sollte ich NIE in einen KI-Chat schreiben? Schreibe positiv (nicht „nicht …", sondern „behalte … für dich") und nenne pro Punkt ein Beispiel aus dem Schulalltag.</span>
+                </div>
+                <div class="idea-reflect"><strong>Selbst-Check:</strong> Welcher Punkt ist dir bisher passiert?</div>
+              </div>
+            </div>
+
+            <div class="tab-panel" data-panel="w11-l2">
+              <div class="idea">
+                <h4>🔍 Tool-Audit für mein Lieblings-KI-Tool</h4>
+                <div class="idea-meta">
+                  <span class="badge level-3">Lernidee</span>
+                  <span class="badge time">⏱ 60 Min</span>
+                  <span class="badge tool">🛠 ChatGPT + Datenschutzerklärung</span>
+                </div>
+                <div class="prompt-box">
+                  <button class="copy-btn">Kopieren</button>
+                  <span class="prompt-content">Verhalte dich wie ein:e Datenschutzaudit-Coach. Ich nenne dir das KI-Tool, das ich am meisten nutze. Hilf mir bei einem persönlichen Audit:
+1) Welche Daten gibt das Tool laut Datenschutzerklärung an Dritte weiter?
+2) Wie kann ich das Training meiner Eingaben deaktivieren?
+3) Welche Einstellungen sollte ich heute ändern?
+4) Welche Eingaben sollte ich künftig vermeiden?
+5) Welche Alternative wäre datenschutzfreundlicher?
+Markiere Aussagen, die ich selbst in der Datenschutzerklärung prüfen sollte.
+
+Tool: [NAME]</span>
+                </div>
+                <div class="idea-reflect"><strong>Selbst-Check:</strong> Welche Einstellung änderst du noch heute?</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="ressourcen">
+        <h2>Ressourcen</h2>
+        <ul class="resource-list">
+          <li><span class="res-type">📑</span><div><a href="https://www.lmz-bw.de/medien-und-bildung/medienthemen/kuenstliche-intelligenz" target="_blank" rel="noopener">LMZ Baden-Württemberg: KI</a><span class="res-meta">Aktuelle Hinweise und Tool-Empfehlungen</span></div></li>
+          <li><span class="res-type">📑</span><div><a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener">EU-KI-Verordnung (Volltext)</a><span class="res-meta">EUR-Lex</span></div></li>
+          <li><span class="res-type">🌐</span><div><a href="https://www.klicksafe.de/news/ab-sofort-verfuegbar-ki-and-me-wie-kuenstliche-intelligenz-unser-leben-praegt" target="_blank" rel="noopener">klicksafe: KI &amp; Me</a><span class="res-meta">Datenschutzthemen für Jugendliche</span></div></li>
+        </ul>
+      </section>
+
+    </article>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div>
+      <h4>KI-Magie</h4>
+      <p style="color:rgba(255,255,255,0.85);font-size:0.9rem;">Fortbildungsreihe Künstliche Intelligenz für Schule und Unterricht.</p>
+    </div>
+    <div>
+      <h4>Workshops</h4>
+      <ul>
+        <li><a href="09-didaktischer-einsatz.html">09 · Didaktischer Einsatz</a></li>
+        <li><a href="10-einfuehrung-unterricht.html">10 · Einführung im Unterricht</a></li>
+        <li><a href="11-datenschutz.html">11 · Datenschutz</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Externe Ressourcen</h4>
+      <ul>
+        <li><a href="https://www.klicksafe.de/news/ab-sofort-verfuegbar-ki-and-me-wie-kuenstliche-intelligenz-unser-leben-praegt" target="_blank" rel="noopener">klicksafe</a></li>
+      </ul>
+    </div>
+    <div class="copy" style="grid-column:1/-1;">
+      © <span data-year>2026</span> KI-Magie · Michael Fleischer · CC BY-SA 4.0
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
